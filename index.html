@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#es-redken.es-redken {
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  color: #000;
+}
+
+#es-redken.es-redken * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#es-redken.es-redken h2,
+#es-redken.es-redken h3,
+#es-redken.es-redken h4,
+#es-redken.es-redken h5 {
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+}
+#es-redken.es-redken .es-kv__logo {
+  padding: 32px;
+  opacity: 0;
+  -webkit-animation: slidedown 0.6s forwards 0.9s;
+          animation: slidedown 0.6s forwards 0.9s;
+}
+
+#es-redken.es-redken .es-kv__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#es-redken.es-redken .es-kv__packshot {
+  opacity: 0;
+  -webkit-animation: slideright 0.9s forwards 0.3s;
+          animation: slideright 0.9s forwards 0.3s;
+}
+
+#es-redken.es-redken .es-kv__title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #d60078;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: -2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#es-redken.es-redken .es-kv__subtitle {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#es-redken.es-redken .es-kv__text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 22px;
+  padding: 32px 0;
+  text-align: center;
+}
+
+#es-redken.es-redken .es-intro {
+  background-color: #d60078;
+  margin-bottom: 32px;
+}
+
+#es-redken.es-redken .es-intro__container {
+  padding: 16px 8px;
+}
+
+#es-redken.es-redken .es-intro__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#es-redken.es-redken .es-intro__text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #fff;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 32px;
+}
+
+#es-redken.es-redken .es-intro__text--span {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#es-redken.es-redken .es-cross {
+  margin-bottom: 32px;
+}
+
+#es-redken.es-redken .es-cross__container {
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px 16px;
+}
+
+#es-redken.es-redken .es-cross__title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #000;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  text-align: center;
+  padding: 32px 0;
+}
+
+#es-redken.es-redken .es-cross__title--span {
+  color: #d60078;
+}
+
+#es-redken.es-redken .es-cross__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  transition: all 0.3s;
+}
+
+#es-redken.es-redken .es-cross__single {
+  border-radius: 8px;
+  border: #d60078 2px solid;
+  max-width: 370px;
+}
+
+#es-redken.es-redken .es-cross__wrapper {
+  padding: 32px;
+  overflow: hidden;
+}
+
+#es-redken.es-redken .es-cross__wrapper:hover .es-cross__img {
+  transform: scale(1.1);
+}
+
+#es-redken.es-redken .es-cross__name {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #d60078;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+
+#es-redken.es-redken .es-cross__desc {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #000;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+#es-redken.es-redken .es-cross__text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #000;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+#es-redken.es-redken .es-cross__link {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  display: block;
+  color: #fff;
+  background-color: #d60078;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 790;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 8px;
+  border: #d60078 2px solid;
+  margin-bottom: 16px;
+}
+
+#es-redken.es-redken .es-cross__link:hover {
+  background: #fff;
+  color: #d60078;
+}
+
+#es-redken.es-redken .es-men__title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #000;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  text-align: center;
+  padding: 32px 0;
+}
+
+#es-redken.es-redken .es-men__title--span {
+  color: #d60078;
+}
+
+#es-redken.es-redken .es-men__container {
+  background-color: #f5f5f5;
+}
+
+#es-redken.es-redken .es-men__content {
+  padding: 8px;
+}
+
+#es-redken.es-redken .es-men__name {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #d60078;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  text-align: left;
+}
+
+#es-redken.es-redken .es-men__desc {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #000;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+#es-redken.es-redken .es-men__text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #000;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+#es-redken.es-redken .es-men__link {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  color: #fff;
+  background-color: #d60078;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 790;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 8px;
+  border: #d60078 2px solid;
+  margin-bottom: 16px;
+}
+
+#es-redken.es-redken .es-men__link:hover {
+  background: #fff;
+  color: #d60078;
+}
+
+#es-redken.es-redken .es-men__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+#es-redken.es-redken .es-style {
+  margin-bottom: 32px;
+}
+
+#es-redken.es-redken .es-style__title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #000;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  text-align: center;
+  padding: 32px 0;
+}
+
+#es-redken.es-redken .es-style__title--span {
+  color: #d60078;
+}
+
+#es-redken.es-redken .es-style__container {
+  background-color: #f5f5f5;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+#es-redken.es-redken .es-style__content {
+  padding: 8px;
+}
+
+#es-redken.es-redken .es-style__name {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #d60078;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  text-align: left;
+}
+
+#es-redken.es-redken .es-style__desc {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #000;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+#es-redken.es-redken .es-style__text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #000;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+#es-redken.es-redken .es-style__link {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  display: block;
+  color: #fff;
+  background-color: #d60078;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 790;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 8px;
+  border: #d60078 2px solid;
+  margin-bottom: 16px;
+  max-width: 280px;
+  margin-inline: auto;
+}
+
+#es-redken.es-redken .es-style__link:hover {
+  background: #fff;
+  color: #d60078;
+}
+
+#es-redken.es-redken .es-style__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+#es-redken.es-redken .es-video__iframe {
+  min-height: 385px;
+}
+
+#es-redken.es-redken .es-footer__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 980px) {
+  #es-redken.es-redken .es-kv__container {
+    display: flex;
+  }
+  #es-redken.es-redken .es-kv__packshot {
+    width: 60%;
+  }
+  #es-redken.es-redken .es-kv__content {
+    width: 40%;
+  }
+  #es-redken.es-redken .es-intro__container {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    gap: 48px;
+    padding: 32px;
+  }
+  #es-redken.es-redken .es-intro__content {
+    max-width: 60%;
+  }
+  #es-redken.es-redken .es-intro {
+    margin-top: -50px;
+    z-index: 5;
+    position: relative;
+  }
+  #es-redken.es-redken .es-intro__text {
+    padding-top: 0;
+  }
+  #es-redken.es-redken .es-cross__text {
+    min-height: 180px;
+  }
+  #es-redken.es-redken .es-cross__title {
+    text-align: left;
+    padding-left: 40px;
+  }
+  #es-redken.es-redken .es-men__title {
+    text-align: left;
+    padding: 64px;
+    padding-left: 40px;
+  }
+  #es-redken.es-redken .es-men__content {
+    width: 80%;
+  }
+  #es-redken.es-redken .es-men__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 32px;
+    gap: 32px;
+  }
+  #es-redken.es-redken .es-style__title {
+    text-align: left;
+    padding: 64px;
+    padding-left: 40px;
+  }
+  #es-redken.es-redken .es-style__content {
+    padding: 32px;
+  }
+  #es-redken.es-redken .es-style {
+    margin-bottom: 64px;
+  }
+  #es-redken.es-redken .es-footer__container {
+    display: grid; 
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+  }
+  #es-redken.es-redken .es-video__iframe {
+    min-height: 470px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  #es-redken.es-redken .es-kv__logo {
+    padding: 82px;
+  }
+  #es-redken.es-redken .es-style__wrapper {
+    display: flex;
+    gap: 16px;
+  }
+  #es-redken.es-redken .es-video__iframe {
+    min-height: 590px;
+  }
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideup {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(32px);
+            transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideup {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(32px);
+            transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slidedown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-32px);
+            transform: translateY(-32px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-32px);
+            transform: translateY(-32px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideright {
+  0% {
+    opacity: 0.3;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideright {
+  0% {
+    opacity: 0.3;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideleft {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideleft {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="es-redken" id="es-redken">
+
+      <div class="es-kv">
+        <div class="es-kv__container">
+          <div class="es-kv__packshot">
+            <img
+              src="/public/assets/cards/redken/landing-page/kv.png"
+              alt=""
+              class="es-kv__img"
+            />
+          </div>
+          <div class="es-kv__content">
+            <div class="es-kv__logo">
+              <img
+                src="/public/assets/cards/redken/landing-page/logo.png"
+                alt="redken"
+                class="es-kv__img es-kv__img__logo"
+              />
+            </div>
+            <p class="es-kv__title">
+              Napędzany nauką
+            </p>
+            <p class="es-kv__subtitle">
+              Rekomendowany przez <br> profesjonalistów
+            </p>
+            <p class="es-kv__text">
+              Wiodąca marka profesjonalnych <br> produktów do włosów
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="es-intro">
+        <div class="es-intro__container">
+          <div class="es-intro__image">
+            <img
+            src="/public/assets/cards/redken/landing-page/icon.png"
+            alt="icon"
+            class="es-intro__img"
+            />
+          </div>
+          <div class="es-intro__content">
+            <p class="es-intro__text">
+              Technologia oparta na najnowszych osiągnięciach nauki oraz tradycji innowacji sięgającej lat 60. XX wieku.
+              Jest pierwszą marką, która zastosowała naukowe podejście do włosów
+              i&nbsp;odkryła formułę, która do dziś wyznacza standardy pielęgnacji włosów: <br>
+              <span class="es-intro__text--span">PROTEINY + NAWILŻENIE + KWASOWE pH = ZDROWE WŁOSY</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="es-cross">
+        <p class="es-cross__title">Znajdź gamę <span class="es-cross__title--span">odpowiadającą Twoim potrzebom</span></p>
+        <div class="es-cross__container">
+          <div class="es-cross__single">
+            <div class="es-cross__wrapper">
+              <p class="es-cross__name">
+                Acidic Bonding Concentrate
+              </p>
+              <p class="es-cross__desc">
+                Intensywna regeneracja
+              </p>
+              <p class="es-cross__text">
+                Intensywnie regenerująca gama wspiera odbudowę włosa wewnątrz i&nbsp;na zewnątrz.
+                W efekcie są one mniej łamliwe, łatwiejsze
+                w rozczesywaniu i&nbsp;jedwabiście gładkie w dotyku. Odżywiająca formuła chroni dodatkowo kolor przed wypłukiwaniem.
+              </p>
+              <img
+              src="/public/assets/cards/redken/landing-page/cross-1.png"
+              alt=""
+              class="es-cross__img"
+              />
+              <a href="https://friser.pl/redken/acidic-bonding-concentrate" target="_blank" class="es-cross__link">
+                Dowiedz się więcej
+              </a>
+            </div>
+          </div>
+          <div class="es-cross__single">
+            <div class="es-cross__wrapper">
+              <p class="es-cross__name">
+                All Soft 
+              </p>
+              <p class="es-cross__desc">
+                Nawilżenie
+              </p>
+              <p class="es-cross__text">
+                Gama All Soft wzbogacona olejkiem arganowym ułatwia rozczesywanie włosów i&nbsp;zwiększa ich połysk, pozostawiając je nawilżone
+                i&nbsp;wypielęgnowane. Intensywnie odżywiająca formuła nadaje się do&nbsp;każdego rodzaju włosów.                 
+              </p>
+              <img
+              src="/public/assets/cards/redken/landing-page/cross-2.png"
+              alt=""
+              class="es-cross__img"
+              />
+              <a href="https://friser.pl/redken/all-soft" target="_blank" class="es-cross__link">
+                Dowiedz się więcej
+              </a>
+            </div>
+          </div>
+          <div class="es-cross__single">
+            <div class="es-cross__wrapper">
+              <p class="es-cross__name">
+                Color Extend Magnetics 
+              </p>
+              <p class="es-cross__desc">
+                Trwałość koloru
+              </p>
+              <p class="es-cross__text">
+                Pielęgnacja Redken Color Extend Magnetics wzbogacona o aminokwasy dedykowana jest
+                do włosów farbowanych. Formuła o kwasowym pH domyka łuski włosowe, zabezpieczając
+                je przed wypłukiwaniem się koloru.
+              </p>
+              <img
+              src="/public/assets/cards/redken/landing-page/cross-3.png"
+              alt=""
+              class="es-cross__img"
+              />
+              <a href="https://friser.pl/redken/color-extend-magnetics" target="_blank" class="es-cross__link">
+                Dowiedz się więcej
+              </a>
+            </div>
+          </div>
+          <div class="es-cross__single">
+            <div class="es-cross__wrapper">
+              <p class="es-cross__name">
+                Extreme 
+              </p>
+              <p class="es-cross__desc">
+                Intensywna naprawa
+              </p>
+              <p class="es-cross__text">
+                Redken Extreme to wyjątkowa gama wzbogacona proteinami, dedykowana do włosów potrzebujących odbudowy. 
+                Regenerująca formuła przywraca włosom siłę i zapobiega rozdwajaniu się końcówek.
+              </p>
+              <img
+              src="/public/assets/cards/redken/landing-page/cross-4.png"
+              alt=""
+              class="es-cross__img"
+              />
+              <a href="https://friser.pl/redken/extreme" target="_blank" class="es-cross__link">
+                Dowiedz się więcej
+              </a>
+            </div>
+          </div>
+          <div class="es-cross__single">
+            <div class="es-cross__wrapper">
+              <p class="es-cross__name">
+                Volume Injection 
+              </p>
+              <p class="es-cross__desc">
+                Dodanie objętości
+              </p>
+              <p class="es-cross__text">
+                Redken Volume Injection stworzony został
+                z myślą o włosach pozbawionych objętości. Kompleksowa formuła szamponu i&nbsp;odżywki nadaje włosom lekkości, 
+                pozostawiając je odżywione i&nbsp;uniesione u nasady, widocznie zwiększając objętość.
+              </p>
+              <img
+              src="/public/assets/cards/redken/landing-page/cross-5.png"
+              alt=""
+              class="es-cross__img"
+              />
+              <a href="https://friser.pl/redken/volume-injection" target="_blank" class="es-cross__link">
+                Dowiedz się więcej
+              </a>
+            </div>
+          </div>
+          <div class="es-cross__single">
+            <div class="es-cross__wrapper">
+              <p class="es-cross__name">
+                Frizz Dismiss 
+              </p>
+              <p class="es-cross__desc">
+                Wygładzenie
+              </p>
+              <p class="es-cross__text">
+                Gama Redken Frizz Dismiss przeznaczona jest do włosów puszących się, które trudno poskromić. 
+                Kompleksowe formuły wzbogacone o&nbsp;olejek Babassu, wygładzają niesforne pasma, pozostawiając włosy odżywione i&nbsp;pełne blasku.
+              </p>
+              <img
+              src="/public/assets/cards/redken/landing-page/cross-6.png"
+              alt=""
+              class="es-cross__img"
+              />
+              <a href="https://friser.pl/redken/frizz-dismiss" target="_blank" class="es-cross__link">
+                Dowiedz się więcej
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="es-men">
+        <p class="es-men__title">
+          Pielęgnacja napędzana nauką <span class="es-cross__title--span">również dla mężczyzn:</span>
+        </p>
+        <div class="es-men__container">
+          <div class="es-men__content">
+            <p class="es-men__name">
+              Brews
+            </p>
+            <p class="es-men__desc">
+              Produkty dla mężczyzn
+            </p>
+            <p class="es-men__text">
+              Szeroka gama Redken Brews oferuje kompleksową pielęgnację dla mężczyzn do codziennego stosowania.
+              Szampon pozwala na delikatne oczyszczanie włosów, pomagając utrzymać ich strukturę i dobrą kondycję.
+              Różnorodna oferta produktów do pielęgnacji pozwoli każdemu mężczyźnie zadbać zarówno o włosy i brodę, jak i skórę głowy.
+              W gamie nie zabrakło również produktów do stylizacji, dopełniających codzienną pielęgnację.
+            </p>
+            <a href="https://friser.pl/redken-brews" target="_blank" class="es-men__link">
+              Dowiedz się więcej
+            </a>
+          </div>
+          <div class="es-men__image">
+            <img
+              src="/public/assets/cards/redken/landing-page/cross-7.png"
+              alt=""
+              class="es-men__img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="es-style">
+        <p class="es-style__title">
+          Wypróbuj również <span class="es-cross__title--span">nasze produkty do stylizacji:</span>
+        </p>
+        <div class="es-style__wrapper">
+          <div class="es-style__container">
+            <div class="es-style__content">
+              <p class="es-style__name">
+                Styling
+              </p>
+              <p class="es-style__desc">
+                Stylizacja
+              </p>
+              <p class="es-style__text">
+                Szeroka oferta produktów do stylizacji Redken oferuje innowacyjne formuły,
+                które odpowiadają na różnorodne potrzeby włosów - od utrwalenia i uniesienia po nadanie im wyjątkowej tekstury.
+              </p>
+              <div class="es-style__image">
+                <img
+                  src="/public/assets/cards/redken/landing-page/cross-8.png"
+                  alt=""
+                  class="es-style__img"
+                />
+              </div>
+              <a href="https://friser.pl/redken/stylizacja" target="_blank" class="es-style__link">
+                Dowiedz się więcej
+              </a>
+            </div>
+          </div>
+          <div class="es-style__container">
+            <div class="es-style__content">
+              <p class="es-style__name">
+                One United
+              </p>
+              <p class="es-style__desc">
+                Produkt multifunkcyjny
+              </p>
+              <p class="es-style__text">
+                Odżywka w spray’u, chroni przed wysoką temperaturą, dodaje blasku i&nbsp;miękkości.
+              </p>
+              <div class="es-style__image">
+                <img
+                  src="/public/assets/cards/redken/landing-page/cross-9.png"
+                  alt=""
+                  class="es-style__img"
+                />
+              </div>
+              <a href="https://friser.pl/redken/one-united-wielozadaniowy-spray-pielegnacyjny-do-wlosow-150ml" target="_blank" class="es-style__link">
+                Dowiedz się więcej
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="es-footer">
+        <div class="es-footer__container">
+          <div class="es-footer__image">
+            <img
+              src="/public/assets/cards/redken/landing-page/picture-1.jpg"
+              alt=""
+              class="es-footer__img"
+            />
+          </div>
+          <div class="es-footer__video">
+            <iframe
+            class="es-video__iframe"
+            width="100%" height="auto"
+            src="https://www.youtube.com/embed/59dJKlU8Kxk"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <div class="es-kv__logo">
+          <img
+            src="/public/assets/cards/redken/landing-page/logo.png"
+            alt="redken"
+            class="es-kv__img es-kv__img--logo"
+          />
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
